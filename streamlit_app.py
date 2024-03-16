@@ -29,7 +29,7 @@ def recommend_book(book_name):
         return books_list
 
     distance, suggestion = model.kneighbors(book_pivot.iloc[book_id, :].values.reshape(1, -1), n_neighbors=6)
-    poster_urls = fetch_poster(suggestion[0])  # Fetch poster URLs using the first suggestion
+    poster_urls = fetch_poster(suggestion[0])  
 
     for i, book_id in enumerate(suggestion[0]):
         book = book_pivot.index[book_id]
