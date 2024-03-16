@@ -40,7 +40,7 @@ def recommend_book(book_name):
 
 st.title("Book Recommendation System")
 st.markdown("## My GitHub: [stoicsapien1/Book_Recommendation_System](https://github.com/stoicsapien1/Book_Recommendation_System)")
-
+st.image("https://i.kym-cdn.com/entries/icons/original/000/018/225/3734744__f0856511d3e1798a4ebbd24b6556800e.jpg")
 selected_books = st.selectbox(
     "Type or select a book from the dropdown",
     book_names
